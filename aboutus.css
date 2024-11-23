@@ -1,0 +1,190 @@
+/* Import common styles */
+@import url('style.css');
+
+/* About Us Specific Styles */
+.about-us {
+    padding: 8rem 2rem 4rem 2rem;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-us .content {
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    border: 3px solid #007BFF; /* Updated border color */
+    border-radius: 0; /* Removed rounded corners */
+    background-color: #f9f9f9; /* Added light background color */
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.1); /* Added subtle box-shadow */
+}
+
+.about-us .content p {
+    margin-bottom: 1.5rem;
+    text-align: center; /* Optional: Align text to the left for better readability */
+}
+
+/* Founders Section */
+.founders {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.founders h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Founder Box */
+.founder-box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.founder-left,
+.founder-image {
+    flex: 1 1 50%;
+    padding: 2rem;
+}
+
+.founder-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.founder-header {
+    text-align: center;
+}
+
+.founder-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.founder-header .subnote {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+.divider {
+    border: none;
+    border-bottom: 1px solid #000;
+    margin: 1rem 0;
+}
+
+.founder-bio {
+    flex: 1;
+    text-align: left;
+}
+
+.founder-bio p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.founder-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founder-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #007BFF;
+}
+
+/* Employee Locations Section */
+
+.staff-locations {
+    padding: 4rem 2rem 8rem 2rem; /* Increased bottom padding */
+    text-align: center;
+}
+
+.staff-locations h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.map-instruction {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.map-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 3px solid #007BFF; /* Added blue border */
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3); /* Updated box-shadow color */
+}
+
+.map-container svg {
+    width: 100%;
+    height: auto;
+}
+
+#employee-locations-dots circle {
+    fill: #007BFF;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#employee-locations-dots text {
+    font-size: 1rem;
+    fill: #333;
+    text-anchor: middle;
+    pointer-events: none; /* Allows clicking on the circle without the text interfering */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#employee-locations-dots g:hover text {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .founder-box {
+        flex-direction: column;
+    }
+
+    .founder-left,
+    .founder-image {
+        flex: 1 1 100%;
+        padding: 1rem;
+    }
+
+    .founder-header,
+    .founder-bio {
+        text-align: center;
+    }
+
+    .founder-image img {
+        max-width: 60%;
+    }
+
+    /* Adjust font sizes for smaller screens */
+    #employee-locations h1 {
+        font-size: 2rem;
+    }
+}
