@@ -1,18 +1,18 @@
-/* Reset Styles */
+/* Reset Default Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Typography */
+/* Website Typography */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
-/* Navigation Bar */
+/* Navigation Bar Styling */
 .header {
     background-color: #fff;
     position: fixed;
@@ -24,8 +24,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.25rem 2rem; /* Adjusted padding for navbar height */
+    padding: 0.25rem 2rem;
 }
+
+/* Navigation Logo/Title Styling */
 
 .navbar .logo {
     display: flex;
@@ -47,7 +49,7 @@ body {
     height: 100%;
 }
 
-/* Navigation Links */
+/* Navigation Links Styling */
 .navbar .nav-links {
     list-style: none;
     display: flex;
@@ -56,7 +58,7 @@ body {
 
 .navbar .nav-links li {
     margin-left: 2rem;
-    opacity: 1; /* Ensure nav links are visible in desktop view */
+    opacity: 1; 
 }
 
 .navbar .nav-links a {
@@ -96,7 +98,7 @@ body {
     background: #007BFF;
 }
 
-/* Burger Menu */
+/* Mobile Menu Icon Styling */
 .burger {
     display: none;
     cursor: pointer;
@@ -110,7 +112,6 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Burger Menu Animation */
 .burger.toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -123,7 +124,7 @@ body {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Hero Section with Graphics */
+/* Introduction Section Styling */
 .hero {
     position: relative;
     background-color: #f0f0f0;
@@ -138,9 +139,9 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
-    background: rgba(255, 255, 255, 0.8); /* White background with opacity */
+    background: rgba(255, 255, 255, 0.8); 
     padding: 2rem;
-    border-radius: 15px; /* Curved corners */
+    border-radius: 15px; 
 }
 
 .hero-content h1 {
@@ -172,7 +173,7 @@ body {
     background-color: #0056b3;
 }
 
-/* Floating Icons */
+/* Floating Graphics Styling */
 .tech-icons {
     position: absolute;
     width: 100%;
@@ -200,7 +201,7 @@ body {
     }
 }
 
-/* Advertisement Section */
+/* Pitch Section Styling */
 .pitch {
     padding: 4rem 2rem;
     background-color: #fff;
@@ -240,20 +241,20 @@ body {
     background-color: #0056b3;
 }
 
-/* Why Us Section */
+/* Why Us Section Styling */
 .why-us {
-    padding: 6rem 2rem; /* Increased padding for larger section */
+    padding: 6rem 2rem; 
     background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
     text-align: center;
 }
 
 .why-us-content {
-    max-width: 1000px; /* Increased max-width for larger content area */
+    max-width: 1000px; 
     margin: 0 auto;
     background-color: #fff;
-    padding: 3rem; /* Increased internal padding */
+    padding: 3rem; 
     border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Enhanced shadow due to larger size */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); 
     position: relative;
     overflow: hidden;
 }
@@ -265,46 +266,45 @@ body {
     left: -20%;
     width: 140%;
     height: 140%;
-    background: radial-gradient(circle at center, rgba(0, 123, 255, 0.1), transparent 70%); /* Reduced opacity for less intense gradient */
+    background: radial-gradient(circle at center, rgba(0, 123, 255, 0.1), transparent 70%); 
     transform: rotate(45deg);
 }
 
 .why-us-content h2 {
-    font-size: 3rem; /* Increased font size for heading */
-    margin-bottom: 2rem; /* Increased spacing below heading */
+    font-size: 3rem; 
+    margin-bottom: 2rem; 
     color: #007BFF;
 }
 
 .why-us-content p {
-    font-size: 1.5rem; /* Increased font size for paragraph */
+    font-size: 1.5rem; 
     color: #333;
     line-height: 1.8;
     z-index: 1;
     position: relative;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .why-us {
-        padding: 4rem 1rem; /* Adjusted padding for smaller screens */
+        padding: 4rem 1rem; 
     }
 
     .why-us-content {
         padding: 2rem 1.5rem;
-        max-width: 90%; /* Ensure content doesn't overflow on small screens */
+        max-width: 90%; 
     }
 
     .why-us-content h2 {
-        font-size: 2rem; /* Adjusted heading size for mobile */
+        font-size: 2rem; 
     }
 
     .why-us-content p {
-        font-size: 1.1rem; /* Adjusted paragraph size for mobile */
+        font-size: 1.1rem; 
     }
 }
 
 
-/* Services Section */
+/* Services Section Styling */
 .services {
     padding: 4rem 2rem;
     background-color: #f9f9f9;
@@ -352,7 +352,7 @@ body {
     transform: translateY(-10px);
 }
 
-/* Testimonials Section */
+/* Customer Testimonials Section Styling */
 .testimonials {
     padding: 4rem 2rem;
     text-align: center;
@@ -400,7 +400,7 @@ body {
     opacity: 0.8;
 }
 
-/* Footer */
+/* Footer Styling */
 .footer {
     background-color: #333;
     color: #fff;
@@ -449,8 +449,9 @@ body {
 }
 
 
-/* Media Queries */
+/* Extra Media Queries */
 @media (max-width: 768px) {
+
     /* Navigation */
     .navbar {
         padding: 0.5rem 1.5rem;
@@ -491,7 +492,7 @@ body {
         opacity: 1;
     }
 
-    /* Apply animation to nav links */
+    /* Nav Link Animation */
     .navbar .nav-links.nav-active li {
         animation: navLinkFade 0.5s forwards;
     }
@@ -500,7 +501,7 @@ body {
         display: block;
     }
 
-    /* Burger Menu Animation */
+    /* Mobile Menu Icon Animation */
     .burger.toggle .line1 {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
@@ -513,7 +514,7 @@ body {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    /* Hero Content */
+    /* Introduction Content */
     .hero-content {
         padding: 1.5rem;
     }
@@ -526,12 +527,12 @@ body {
         font-size: 1rem;
     }
 
-    /* Tech Icons */
+    /* Floating Graphics */
     .tech-icon {
         font-size: 60px;
     }
 
-    /* Services and Testimonials */
+    /* Services and Customer Testimonials */
     .services-container, .testimonials-container {
         flex-direction: column;
     }
@@ -541,7 +542,7 @@ body {
     }
 }
 
-/* Nav Link Fade Animation */
+/* Navigation Link Fade Animation */
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -552,6 +553,3 @@ body {
         transform: translateX(0);
     }
 }
-
-/* Font Awesome Icons */
-/* Note: Font Awesome is included via CDN in the HTML head */
