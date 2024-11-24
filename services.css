@@ -1,7 +1,6 @@
-/* Import common styles */
 @import url('style.css');
 
-/* Services Page Specific Styles */
+/* Services Page Styling */
 .services-page {
     padding: 8rem 2rem;
     text-align: center;
@@ -49,7 +48,7 @@
     transform: translateY(-10px);
 }
 
-/* Development Plans Section */
+/* Development Plans Section Styling */
 .development-plans {
     padding: 4rem 2rem;
     background-color: #f9f9f9;
@@ -115,7 +114,7 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Comparison Table Section */
+/* Comparison Table Section Styling */
 .comparison-table {
     padding: 4rem 2rem;
     text-align: center;
@@ -173,7 +172,6 @@ table td:first-child {
     }
 }
 
-/* Center align text in the merged cell and style it */
 .pricing-cell {
     text-align: center;
     font-weight: bold;
@@ -182,28 +180,28 @@ table td:first-child {
     font-size: 1.2rem;
 }
 
-/* Optional: Style the "Pricing" feature cell */
 table td:first-child {
     font-weight: bold;
     background-color: #f0f0f0;
 }
 
-/* Ensure the merged cell spans correctly on mobile */
 @media (max-width: 768px) {
     .pricing-cell {
         font-size: 1rem;
     }
 }
 
-/* Adjust footer position */
+/* Footer Styling */
 .footer {
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
-/* Responsive Design */
+/* Extra Media Queries */
 @media (max-width: 768px) {
+
+    /* Development Plans Section */
     .plan-box {
         padding: 2rem 1rem;
     }
@@ -225,4 +223,5 @@ table td:first-child {
     .plan-box p {
         font-size: 1rem;
     }
+
 }
