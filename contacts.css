@@ -1,7 +1,6 @@
-/* Import common styles */
 @import url('style.css');
 
-/* Contact Page Specific Styles */
+/* Contact Page Styling */
 .contact-page {
     padding: 8rem 2rem;
     text-align: center;
@@ -47,7 +46,7 @@
     color: #0056b3;
 }
 
-/* Disclaimer Styling */
+/* Contact Instructions Section Styling */
 .disclaimer {
     margin-top: 3rem;
     padding: 2rem;
@@ -73,7 +72,7 @@
     margin-bottom: 1rem;
 }
 
-/* Volunteers Notice Styles (Same as Important Notice) */
+/* New Volunteers Section Styling */
 .volunteers-notice {
     margin-top: 3rem;
     padding: 2rem;
@@ -99,31 +98,27 @@
     margin-bottom: 1rem;
 }
 
-/* Adjust footer position */
+/* Footer Styling */
 .footer {
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
-/* Responsive Design */
+/* Extra Media Queries */
 @media (max-width: 768px) {
-    .disclaimer {
+
+    /* Contact Instructions Section */
+    .disclaimer, .volunteers-notice {
         padding: 1.5rem;
     }
 
-    .disclaimer h2 {
+    .disclaimer h2, .volunteers-notice h2 {
         font-size: 1.5rem;
     }
 
-    .disclaimer p {
+    .disclaimer p, .volunteers-notice p {
         font-size: 1rem;
     }
-}
 
-/* Adjust footer position */
-.footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
