@@ -1,14 +1,16 @@
-// Burger Menu Toggle
+// Mobile Menu Icon Button Toggle Function
 document.addEventListener('DOMContentLoaded', () => {
+
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
 
     burger.addEventListener('click', () => {
-        // Toggle Nav
+
+        // Navigation Toggle Function
         nav.classList.toggle('nav-active');
 
-        // Animate Links
+        // Link Animations
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = '';
@@ -17,12 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Burger Animation
+        // Mobile Menu Icon Animation
         burger.classList.toggle('toggle');
+
     });
 });
 
-// Smooth Scroll (Optional Enhancement)
+// Smooth Scroll Functionality
 const navLinksSmooth = document.querySelectorAll('.nav-links a');
 
 for (const link of navLinksSmooth) {
@@ -30,6 +33,7 @@ for (const link of navLinksSmooth) {
 }
 
 function smoothScroll(e) {
+
     e.preventDefault();
     const href = this.getAttribute('href');
 
@@ -40,4 +44,5 @@ function smoothScroll(e) {
     } else {
         window.location.href = href;
     }
+    
 }
