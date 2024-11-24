@@ -1,7 +1,6 @@
-/* Import common styles */
 @import url('style.css');
 
-/* About Us Specific Styles */
+/* About Us Section Styling */
 .about-us {
     padding: 8rem 2rem 4rem 2rem;
     text-align: center;
@@ -20,18 +19,18 @@
     font-size: 1.2rem;
     line-height: 1.8;
     color: #555;
-    border: 3px solid #007BFF; /* Updated border color */
-    border-radius: 0; /* Removed rounded corners */
-    background-color: #f9f9f9; /* Added light background color */
-    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.1); /* Added subtle box-shadow */
+    border: 3px solid #007BFF; 
+    border-radius: 0; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.1);
 }
 
 .about-us .content p {
     margin-bottom: 1.5rem;
-    text-align: center; /* Optional: Align text to the left for better readability */
+    text-align: center; 
 }
 
-/* Founders Section */
+/* Director Team Section Styling */
 .founders {
     padding: 4rem 2rem;
     text-align: center;
@@ -42,7 +41,6 @@
     margin-bottom: 2rem;
 }
 
-/* Founder Box */
 .founder-box {
     display: flex;
     flex-wrap: wrap;
@@ -109,10 +107,10 @@
     border: 3px solid #007BFF;
 }
 
-/* Employee Locations Section */
+/* Main Staff Locations Section Styling */
 
 .staff-locations {
-    padding: 4rem 2rem 8rem 2rem; /* Increased bottom padding */
+    padding: 4rem 2rem 8rem 2rem; 
     text-align: center;
 }
 
@@ -134,8 +132,8 @@
     padding: 1rem;
     border-radius: 10px;
     background-color: #fff;
-    border: 3px solid #007BFF; /* Added blue border */
-    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3); /* Updated box-shadow color */
+    border: 3px solid #007BFF; 
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3);
 }
 
 .map-container svg {
@@ -153,7 +151,7 @@
     font-size: 1rem;
     fill: #333;
     text-anchor: middle;
-    pointer-events: none; /* Allows clicking on the circle without the text interfering */
+    pointer-events: none; 
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -162,8 +160,10 @@
     opacity: 1;
 }
 
-/* Responsive Design */
+/* Extra Media Queries */
 @media (max-width: 768px) {
+
+    /* Main Directors Section */
     .founder-box {
         flex-direction: column;
     }
@@ -183,8 +183,9 @@
         max-width: 60%;
     }
 
-    /* Adjust font sizes for smaller screens */
+    /* Main Staff Locations Section */
     #employee-locations h1 {
         font-size: 2rem;
     }
+    
 }
